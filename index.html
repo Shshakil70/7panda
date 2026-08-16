@@ -11,13 +11,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
 
-<!-- ==== Firebase দিয়ে সবার জন্য শেয়ার্ড ডেটা রাখা হয়েছে ====
-     সেটআপ: ১) console.firebase.google.com এ নতুন প্রজেক্ট বানান
-     ২) Realtime Database চালু করুন (Test mode এ)
-     ৩) Project settings > Your apps > Web app থেকে নিচের firebaseConfig এ মান বসান -->
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-
 <style>
 :root {
   --forest: #1B4332;
@@ -211,10 +204,13 @@ const { useState, useEffect, useMemo, useRef } = React;
 
 /* ============ এখানে আপনার Firebase কনফিগ বসান ============ */
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
-  projectId: "YOUR_PROJECT",
+  apiKey: "AIzaSyAIcFXYQYTiRDdq62F6pzC2z9s8Wzj6trI",
+  authDomain: "panda-committee.firebaseapp.com",
+  databaseURL: "https://panda-committee-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "panda-committee",
+  storageBucket: "panda-committee.firebasestorage.app",
+  messagingSenderId: "145102355646",
+  appId: "1:145102355646:web:663ee664c3c27303f3b2ef"
 };
 /* ============================================================ */
 
