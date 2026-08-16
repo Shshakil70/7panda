@@ -1198,11 +1198,7 @@ function SevenPanda() {
       </div>
       <div className="sp-stat-breakdown">মাসিক জমা: {money(stats.monthlyCollected)} · বার্ষিক বুস্ট: {money(stats.boostCollected)} · কাস্টম খাত: {money(stats.customCollected)}</div>
 
-      {usingLocal && (
-        <div className="sp-error-banner" style={{ background: "#fdf1d8", color: "#8a6d1a" }}>
-          ⚠️ এখন লোকাল টেস্ট মোডে চলছে — শুধু এই ব্রাউজারেই ডেটা সেভ হচ্ছে, বাকি ৬ জন দেখতে পাবে না। এটা সাধারণত Firebase-এর স্ক্রিপ্ট নেটওয়ার্কে ব্লক হলে হয় — ওয়াইফাই/মোবাইল ডেটা বদলে আবার চেষ্টা করুন, অথবা ব্রাউজারের Data Saver/Lite মোড বন্ধ করে রিলোড করুন।
-        </div>
-      )}
+      
       {saveError && <div className="sp-error-banner">{saveError}</div>}
       {savedFlash && <div className="sp-saved-flash">সেভ হয়েছে ✓</div>}
       {copyFlash && <div className="sp-saved-flash">কপি হয়েছে ✓ — এবার গ্রুপে পেস্ট করুন</div>}
